@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('blog/home');
-});
+// Route::get('/', function () {
+//     return view('blog/home');
+// });
+Route::get('/','PostController@homePage');
 
 Auth::routes();
 

@@ -7,11 +7,16 @@ use App\Post;
 use Auth;
 class PostController extends Controller
 {
+  public function homePage()
+  {
+    $posts=Post::orderby('id','desc')->paginate(10);
+    return view('blog/home')->with('posts',$posts);
+  }
     public function index()
     {
       $loggedInUserId = Auth::id();
       $posts = Post::all()->where('user_id', $loggedInUserId);
-      return view('AdminPanel/adminhome',['posts'=>$posts]);
+      return view('AdminPanel/adminhome')->with('posts',$posts);
     }
 
     public function create()
