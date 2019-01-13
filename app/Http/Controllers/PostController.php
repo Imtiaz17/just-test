@@ -37,4 +37,10 @@ class PostController extends Controller
       $post->save();
       return redirect()->route('posts.index');
     }
+    public function show($id)
+    {
+      $post=Post::find($id);
+      $data= array('id' =>$id ,'post'=>$post );
+      return view('blog.viewpost',$data);
+    }
 }
