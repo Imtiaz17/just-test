@@ -6,6 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Anhskohbo\\NoCaptcha\\Facades\\NoCaptcha' => $vendorDir . '/anhskohbo/no-captcha/src/Facades/NoCaptcha.php',
+    'Anhskohbo\\NoCaptcha\\NoCaptcha' => $vendorDir . '/anhskohbo/no-captcha/src/NoCaptcha.php',
+    'Anhskohbo\\NoCaptcha\\NoCaptchaServiceProvider' => $vendorDir . '/anhskohbo/no-captcha/src/NoCaptchaServiceProvider.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -598,6 +601,12 @@ return array(
     'Faker\\ValidGenerator' => $vendorDir . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
     'Fideloper\\Proxy\\TrustProxies' => $vendorDir . '/fideloper/proxy/src/TrustProxies.php',
     'Fideloper\\Proxy\\TrustedProxyServiceProvider' => $vendorDir . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
+    'Greggilbert\\Recaptcha\\Facades\\Recaptcha' => $vendorDir . '/greggilbert/recaptcha/src/Facades/Recaptcha.php',
+    'Greggilbert\\Recaptcha\\Recaptcha' => $vendorDir . '/greggilbert/recaptcha/src/Recaptcha.php',
+    'Greggilbert\\Recaptcha\\RecaptchaServiceProvider' => $vendorDir . '/greggilbert/recaptcha/src/RecaptchaServiceProvider.php',
+    'Greggilbert\\Recaptcha\\Service\\CheckRecaptcha' => $vendorDir . '/greggilbert/recaptcha/src/Service/CheckRecaptcha.php',
+    'Greggilbert\\Recaptcha\\Service\\CheckRecaptchaV2' => $vendorDir . '/greggilbert/recaptcha/src/Service/CheckRecaptchaV2.php',
+    'Greggilbert\\Recaptcha\\Service\\RecaptchaInterface' => $vendorDir . '/greggilbert/recaptcha/src/Service/RecaptchaInterface.php',
     'GuzzleHttp\\Client' => $vendorDir . '/guzzlehttp/guzzle/src/Client.php',
     'GuzzleHttp\\ClientInterface' => $vendorDir . '/guzzlehttp/guzzle/src/ClientInterface.php',
     'GuzzleHttp\\Cookie\\CookieJar' => $vendorDir . '/guzzlehttp/guzzle/src/Cookie/CookieJar.php',

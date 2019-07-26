@@ -11,9 +11,9 @@ class ComposerStaticInita6ee0c5cc3dcafa2db32afdda5ddc87a
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'cf97c57bfe0f23854afd2f3818abb7a0' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/create_uploaded_file.php',
@@ -126,6 +126,7 @@ class ComposerStaticInita6ee0c5cc3dcafa2db32afdda5ddc87a
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'Greggilbert\\Recaptcha\\' => 22,
         ),
         'F' => 
         array (
@@ -154,6 +155,7 @@ class ComposerStaticInita6ee0c5cc3dcafa2db32afdda5ddc87a
         'A' => 
         array (
             'App\\' => 4,
+            'Anhskohbo\\NoCaptcha\\' => 20,
         ),
     );
 
@@ -345,6 +347,10 @@ class ComposerStaticInita6ee0c5cc3dcafa2db32afdda5ddc87a
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'Greggilbert\\Recaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/greggilbert/recaptcha/src',
+        ),
         'Fideloper\\Proxy\\' => 
         array (
             0 => __DIR__ . '/..' . '/fideloper/proxy/src',
@@ -385,6 +391,10 @@ class ComposerStaticInita6ee0c5cc3dcafa2db32afdda5ddc87a
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
+        'Anhskohbo\\NoCaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/anhskohbo/no-captcha/src',
+        ),
     );
 
     public static $fallbackDirsPsr4 = array (
@@ -420,6 +430,9 @@ class ComposerStaticInita6ee0c5cc3dcafa2db32afdda5ddc87a
     );
 
     public static $classMap = array (
+        'Anhskohbo\\NoCaptcha\\Facades\\NoCaptcha' => __DIR__ . '/..' . '/anhskohbo/no-captcha/src/Facades/NoCaptcha.php',
+        'Anhskohbo\\NoCaptcha\\NoCaptcha' => __DIR__ . '/..' . '/anhskohbo/no-captcha/src/NoCaptcha.php',
+        'Anhskohbo\\NoCaptcha\\NoCaptchaServiceProvider' => __DIR__ . '/..' . '/anhskohbo/no-captcha/src/NoCaptchaServiceProvider.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -1012,6 +1025,12 @@ class ComposerStaticInita6ee0c5cc3dcafa2db32afdda5ddc87a
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
         'Fideloper\\Proxy\\TrustProxies' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustProxies.php',
         'Fideloper\\Proxy\\TrustedProxyServiceProvider' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
+        'Greggilbert\\Recaptcha\\Facades\\Recaptcha' => __DIR__ . '/..' . '/greggilbert/recaptcha/src/Facades/Recaptcha.php',
+        'Greggilbert\\Recaptcha\\Recaptcha' => __DIR__ . '/..' . '/greggilbert/recaptcha/src/Recaptcha.php',
+        'Greggilbert\\Recaptcha\\RecaptchaServiceProvider' => __DIR__ . '/..' . '/greggilbert/recaptcha/src/RecaptchaServiceProvider.php',
+        'Greggilbert\\Recaptcha\\Service\\CheckRecaptcha' => __DIR__ . '/..' . '/greggilbert/recaptcha/src/Service/CheckRecaptcha.php',
+        'Greggilbert\\Recaptcha\\Service\\CheckRecaptchaV2' => __DIR__ . '/..' . '/greggilbert/recaptcha/src/Service/CheckRecaptchaV2.php',
+        'Greggilbert\\Recaptcha\\Service\\RecaptchaInterface' => __DIR__ . '/..' . '/greggilbert/recaptcha/src/Service/RecaptchaInterface.php',
         'GuzzleHttp\\Client' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Client.php',
         'GuzzleHttp\\ClientInterface' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/ClientInterface.php',
         'GuzzleHttp\\Cookie\\CookieJar' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Cookie/CookieJar.php',
